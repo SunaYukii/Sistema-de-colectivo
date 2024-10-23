@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra de Pasajes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Bus Santa Fe</h1>
+    </div>
+    <nav>
+      <a href="login.html">Iniciar Sesión</a>
+      <a href="register.html">Crear Cuenta</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Reserva tu Pasaje</h2>
+    <form action="buy-ticket.html" method="GET">
+      <label for="from">Desde:</label>
+      <select id="from" name="from">
+        <option value="esperanza">Esperanza</option>
+        <option value="rosario">Rosario</option>
+        <!-- Agregar más localidades -->
+      </select>
+
+      <label for="to">Hasta:</label>
+      <select id="to" name="to">
+        <option value="rosario">Rosario</option>
+        <option value="santafe">Santa Fe</option>
+        <!-- Agregar más localidades -->
+      </select>
+
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="date">
+
+      <button type="submit">Buscar Pasaje</button>
+    </form>
+  </main>
+</body>
+</html>
